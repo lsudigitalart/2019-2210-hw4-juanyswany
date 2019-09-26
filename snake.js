@@ -1,7 +1,6 @@
 class Snake {
   
     constructor() {
-        stroke(255, 0, 0);
         this.body = [];
       this.body[0] = createVector(floor(w/2), floor(h/2));
       this.xdir = 0;
@@ -55,7 +54,7 @@ class Snake {
     
     show() {
         for(let i = 0; i < this.body.length; i++) {
-          fill(0);
+          fill(178, 53, 74);
         noStroke();
         rect(this.body[i].x, this.body[i].y, 1, 1)
       }
